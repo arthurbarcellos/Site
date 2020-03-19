@@ -8,7 +8,6 @@ body {
 .topnav {
   position: fixed;
   background-color: #fff;
-  overflow: auto;
   padding: 110px 0px;
   width: 100%;
   transition: 0.4s;
@@ -223,6 +222,7 @@ input[type=text] {
   input[type=text]{
     top: 90px !important;
     position: fixed;
+    padding-left: 25px;
   }
 
 }

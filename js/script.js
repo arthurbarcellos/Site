@@ -36,8 +36,8 @@ function closeNav() {
 }
 
 function openSearchBar(){
-  document.getElementById("searchbar").style.height = "10%";
   document.getElementById("searchbar").style.border = "1px solid #ccc";
+  document.getElementById("searchbar").style.height = "10%";
 }
 
 function closeSearchBar(){
