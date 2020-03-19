@@ -1,0 +1,218 @@
+body {
+  margin: 0;
+  background-color: #ffd600;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/* ### INÍCIO DO CABEÇALHO ###*/
+.topnav {
+  position: fixed;
+  background-color: #fff;
+  overflow: auto;
+  padding: 110px 0px;
+  width: 100%;
+  transition: 0.4s;
+  top: 0;
+  z-index: 99;
+}
+
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#logo {
+  transition: 0.4s;
+}
+
+.topnav-right {
+  float: right;
+}
+
+.topnav-right a {
+  position: absolute;
+  top: 50%;
+  transform: translate(-300%, -50%);
+  padding: 0;
+}
+
+.searchbtn { 
+  font-size: 30px;
+  color: gray;
+  background-color: none;
+  cursor: pointer;
+}
+
+.searchbtn:hover {
+  color: #444;
+}
+
+/* Search bar */
+input[type=text] {
+  position: fixed;
+  top: 220px;
+  width: 100%;
+  height: 0;
+  color: #666;
+  box-sizing: border-box;
+  border: none;
+  font-size: 21px;
+  background-color: white;
+  padding: 0 0 0 50px;
+  z-index: 1;
+  transition: 0.4s;
+}
+
+::placeholder{
+  color: #ccc;
+}
+
+/* The sidepanel menu */
+.sidepanel {
+  height: 100%; /* Specify a height */
+  width: 300px; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: -300px;
+  background-color: #26408d; 
+  overflow-x: hidden; /* Disable horizontal scroll */
+  overflow-y: auto;
+  padding-top: 0; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+/* The sidepanel links */
+.sidepanel a {
+  padding: 20px 10px 20px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: #f2f2f2;
+  display: block;
+  transition: 0.3s;
+  border-bottom: 1px solid #3f528c;
+}
+
+.sidepanel .home { 
+  border-left: 3px solid #ffd600;
+}
+
+.sidepanel .active a {
+  padding: 60px 0 160px 30px;
+  border-bottom:1px solid #3f528c;
+}
+
+.active span {
+  color: #f2f2f2;
+  font-size: 21px;
+  font-weight: 300;
+  position: absolute;
+  padding: 25px 0 0 10px;
+  border-top: none;
+}
+
+.sidepanel .sociais {
+  padding: 20px 0 0 32px;
+  transition: 0.3s;
+}
+
+.sidepanel .sociais a {
+  display: inline;
+  border: none;
+  padding-left: 0;
+}
+
+.sidepanel p {
+  font-size: 12px;
+  font-weight: 300;
+  color: #f2f2f2;
+  padding-left: 32px;
+}
+
+.copyright {
+  display: block;
+  font-size: 10px;
+  color: #f2f2f2;
+  padding: 300px 0 32px 32px;
+}
+  
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+  color: #ffd600;
+}
+  
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  font-weight: 400;
+  margin-left: 50px;
+  border: none;
+}
+  
+/* Style the button that is used to open the sidepanel */
+.menu {
+  font-size: 30px;
+  cursor: pointer;
+  background-color: transparent;
+  color: gray;
+  position: absolute;
+  padding: 0;
+  border: none;
+  top: 50%;
+  transform: translate(200%, -50%);
+}
+
+.menu:hover {
+  color: #444;
+}
+
+.menu span {
+  position: absolute;
+  font-size: 21px;
+  font-weight: 300;
+  padding: 6px 0 0 8px;
+}
+
+/* ### FIM DO CABEÇALHO ###*/
+
+/* ### INÍCIO DO SLIDESHOW ###*/
+.slideshow-container {
+  position: relative;
+  background-color: #26408d;
+  overflow: hidden;
+  width: 100%;
+  height: 570px;
+}
+
+/* ### FIM DO SLIDESHOW ###*/
+
+/* Smalls screns*/
+@media screen and (max-width: 580px) {
+  #topnavbar {
+    padding: 90px 0px 0 0 !important;
+  }
+
+  #logo {
+    height: 70px !important;
+  }
+
+  .slideshow-container {
+    height: 350px;
+  }
+
+  .menu span {
+    display: none;
+  }
+
+  input[type=text]{
+    top: 90px;
+  }
+
+}
