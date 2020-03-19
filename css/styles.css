@@ -1,7 +1,21 @@
 body {
   margin: 0;
-  background-color: #ffd600;
+  background-color: #fff;
   font-family: 'Oxygen', sans-serif;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
+  background: black;
+  display: none;
+  text-align: center;
+  z-index: 2;
+  transition: 0.3s;
 }
 
 /* ### INÍCIO DO CABEÇALHO ###*/
@@ -10,9 +24,9 @@ body {
   background-color: #fff;
   padding: 110px 0px;
   width: 100%;
-  transition: 0.4s;
+  transition: 0.3s;
   top: 0;
-  z-index: 99;
+  z-index: 1;
 }
 
 .topnav-centered a {
@@ -59,11 +73,12 @@ input[type=text] {
   box-sizing: border-box;
   border-radius: 0;
   border: none;
+  border-top: 1px solid #ccc;
   font-size: 21px;
   background-color: white;
   padding: 0 0 0 50px;
-  z-index: 1;
-  transition: 0.4s;
+  z-index: -1;
+  transition: 0.3s;
 }
 
 ::placeholder{
@@ -75,14 +90,14 @@ input[type=text] {
   height: 100%; /* Specify a height */
   width: 300px; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
+  z-index: 3; /* Stay on top */
   top: 0;
   left: -300px;
   background-color: #26408d; 
   overflow-x: hidden; /* Disable horizontal scroll */
   overflow-y: auto;
   padding-top: 0; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+  transition: 0.3s; /* 0.5 second transition effect to slide in the sidepanel */
 }
 
 /* The sidepanel links */
@@ -185,14 +200,18 @@ input[type=text] {
 /* ### INÍCIO DO SLIDESHOW ###*/
 .slideshow-container {
   position: relative;
+  top: 220px;
+  max-width: 1920px;
+  height: 350px;
+  margin: 50px 50px 50px 50px;
   background-color: #26408d;
-  width: 100%;
-  height: 570px;
 }
 
 /* ### FIM DO SLIDESHOW ###*/
 
+/*##############*/
 /* Smalls screns*/
+/*##############*/
 @media screen and (max-width: 580px) {
   #topnavbar {
     padding: 90px 0px 0 0 !important;
@@ -203,7 +222,9 @@ input[type=text] {
   }
 
   .slideshow-container {
-    height: 350px;
+    top: 90px;
+    height: 200px;
+    margin: 0;
   }
 
   .menu span {

@@ -28,20 +28,24 @@ function scrollFunction() {
 // Set the width of the sidebar to 0 (show it) 
 function openNav() {
     document.getElementById("sidepanelbar").style.left = "0";
+    document.getElementById("overlay").style.display = "block";
   }
   
 // Set the width of the sidebar to -300px (hide it)
 function closeNav() {
   document.getElementById("sidepanelbar").style.left = "-300px";
+  document.getElementById("overlay").style.display = "none";
 }
 
 function openSearchBar(){
   document.getElementById("searchbar").style.border = "1px solid #ccc";
   document.getElementById("searchbar").style.height = "70px";
+  document.getElementById("searchbar").style.zIndex = "1";
 }
 
 function closeSearchBar(){
   document.getElementById("searchbar").style.height = "0";
-  document.getElementById("searchbar").style.border = "none";
+  document.getElementById("searchbar").style.borderBottom = "none";
+  document.getElementById("searchbar").style.zIndex = "-1";
   
 }

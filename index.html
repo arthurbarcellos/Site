@@ -9,31 +9,11 @@
     <title>Site</title>
 </head>
 <body>
+    <div id="overlay" style="display: none;"></div>
     <header>
         <!-- Top navigation -->
         <div class="topnav" id="topnavbar">
             <!-- Left-aligned links (default) -->
-            <div class="sidepanel" id="sidepanelbar">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <div class="active">
-                    <a href="#home">
-                        <img src="./images/logo-icon.png" alt="logo" style="height:100px;float: left;">
-                        <span>Colégio<br>São Plácido</span>
-                    </a>
-                </div>
-                <a href="#home" class="home">Home</a>
-                <a href="#colegio">O Colégio</a>
-                <a href="#noticias">Notícias</a>
-                <a href="#contato">Contato</a>
-                <a href="#info">Informações</a>
-                <div class="sociais">
-                    <a href="#facebook"><i class="fa fa-facebook-f"></i></a>
-                    <a href="#instagram"><i class="fa fa-instagram"></i></a>
-                    <a href="#twitter"><i class="fa fa-twitter"></i></a>
-                </div>
-                <p>Compartilhe!</p>
-                <div class="copyright">Todos os direitos reservados. &copy;</div>
-            </div>
             <div class="menu" onclick="openNav()">
                 <i class="fa fa-bars"></i>
                 <span>MENU</span>
@@ -49,11 +29,36 @@
                 </a>
             </div>
         </div>
+        <!--Sidepanel navigation-->
+        <div class="sidepanel" id="sidepanelbar">
+            <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+            <div class="active">
+                <a href="#home">
+                    <img src="./images/logo-icon.png" alt="logo" style="height:100px;float: left;">
+                    <span>Colégio<br>São Plácido</span>
+                </a>
+            </div>
+            <a href="#home" class="home">Home</a>
+            <a href="#colegio">O Colégio</a>
+            <a href="#noticias">Notícias</a>
+            <a href="#contato">Contato</a>
+            <a href="#info">Informações</a>
+            <div class="sociais">
+                <a href="#facebook"><i class="fa fa-facebook-f"></i></a>
+                <a href="#instagram"><i class="fa fa-instagram"></i></a>
+                <a href="#twitter"><i class="fa fa-twitter"></i></a>
+            </div>
+            <p>Compartilhe!</p>
+            <div class="copyright">Todos os direitos reservados. &copy;</div>
+        </div>
     </header>
     
     <div>
-        <input id="searchbar" type="text" name="search" placeholder="Pesquisar...">
+        <form>
+            <input id="searchbar" type="text" name="search" placeholder="Pesquisar...">
+        </form> 
     </div>
+    
 
     <!-- Slideshow container -->
     <div class="slideshow-container">
