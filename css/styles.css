@@ -58,6 +58,7 @@ input[type=text] {
   height: 0;
   color: #666;
   box-sizing: border-box;
+  border-radius: 0;
   border: none;
   font-size: 21px;
   background-color: white;
@@ -211,8 +212,17 @@ input[type=text] {
     display: none;
   }
 
+  .menu {
+    transform: translate(100%, -50%);
+  }
+
+  .topnav-right a {
+    transform: translate(-200%, -50%);
+  }
+
   input[type=text]{
-    top: 90px;
+    top: 90px !important;
+    position: fixed;
   }
 
 }
