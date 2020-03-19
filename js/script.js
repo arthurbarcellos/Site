@@ -1,5 +1,5 @@
-
-window.addEventListener('mouseup', function(event){
+//When click outside element
+document.querySelector('body').addEventListener('mouseup', function(event){
   var sidepanel = document.getElementById("sidepanelbar");
   var search = document.getElementById("searchbar");
   if(event.target != sidepanel && event.target.parentNode != sidepanel){
@@ -37,7 +37,7 @@ function closeNav() {
 
 function openSearchBar(){
   document.getElementById("searchbar").style.border = "1px solid #ccc";
-  document.getElementById("searchbar").style.height = "10%";
+  document.getElementById("searchbar").style.height = "70px";
 }
 
 function closeSearchBar(){
