@@ -32,7 +32,7 @@
         <!--Sidepanel navigation-->
         <div class="sidepanel" id="sidepanelbar">
             <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
-            <div class="active">
+            <div class="ativo">
                 <a href="#home">
                     <img src="./images/logo-icon.png" alt="logo" style="height:100px;float: left;">
                     <span>Colégio<br>São Plácido</span>
@@ -52,17 +52,59 @@
             <div class="copyright">Todos os direitos reservados. &copy;</div>
         </div>
     </header>
-    
+
+    <!--Search bar-->
     <div>
         <form>
             <input id="searchbar" type="text" name="search" placeholder="Pesquisar...">
         </form> 
     </div>
     
-
-    <!-- Slideshow container -->
-    <div class="slideshow-container">
-        
+    <!-- Banner container -->
+    <div class="banner-container">
+        <div class="slides fade">
+            <img src="images/banners/banner1.png">
+            <a href="#slide1" class="title-banner">
+                Lorem ipsum dolor sit amet</a>
+            <a href="#slide1" class="text-banner">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac metus libero. Vestibulum venenatis, erat et iaculis elementum, est tortor lobortis libero, id ornare tortor nibh vitae nunc. 
+            </a>
+            <a href="#slide1" class="banner-more">
+                Saiba mais...
+            </a>
+        </div>
+        <div class="slides fade">
+            <img src="images/banners/banner2.png">
+            <a href="#slide2" class="title-banner">
+                Donec vel mollis diam
+            </a>
+            <a href="#slide2" class="text-banner">
+                Donec vel mollis diam. Sed ultrices finibus laoreet. Etiam dolor neque, convallis vitae metus vel, finibus fringilla felis. Proin sodales, nibh quis consequat volutpat, magna diam commodo est, id ullamcorper felis eros quis risus.
+            </a>
+            <a href="#slide2" class="banner-more">
+                Saiba mais...
+            </a>
+        </div>
+        <div class="slides fade">
+            <img src="images/banners/banner3.png">
+            <a href="#slide3" class="title-banner">
+                Vestibulum porttitor ultrices tincidunt
+            </a>
+            <a href="#slide3" class="text-banner">
+                Vestibulum porttitor ultrices tincidunt. Quisque dapibus condimentum mattis. Maecenas porttitor nunc quis blandit elementum. Nullam urna ligula, suscipit ut iaculis sit amet, dictum non odio.
+            </a>
+            <a href="#slide3" class="banner-more">
+                Saiba mais...
+            </a>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div class="banner-dots">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        <div class="banner-divisa"></div>
     </div>
 
     <div style="padding:15px 15px 2500px;font-size:30px;">

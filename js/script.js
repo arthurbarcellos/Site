@@ -40,12 +40,65 @@ function closeNav() {
 function openSearchBar(){
   document.getElementById("searchbar").style.border = "1px solid #ccc";
   document.getElementById("searchbar").style.height = "70px";
-  document.getElementById("searchbar").style.zIndex = "1";
+  document.getElementById("searchbar").style.zIndex = "2";
 }
 
 function closeSearchBar(){
   document.getElementById("searchbar").style.height = "0";
-  document.getElementById("searchbar").style.borderBottom = "none";
+  document.getElementById("searchbar").style.border = "none";
   document.getElementById("searchbar").style.zIndex = "-1";
-  
+}
+
+//Banner slides
+var slideIndex = 0;
+var t;
+carousel();
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function carousel() {
+  var i;
+  var slides = document.getElementsByClassName("slides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }    
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";  
+  t = setTimeout(carousel, 5000); // Change image every 5 seconds
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("slides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }    
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  clearTimeout(t);
+  t = setTimeout(carousel, 5000);
 }
