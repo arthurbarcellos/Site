@@ -227,13 +227,13 @@ input[type=text] {
 
 .banner-divisa {
   border-right: 1px solid white;
+  opacity: 0.3;
   position: absolute;
   height: 300px;
   top: 50%;
   left: 50%;
   right: 50%;
   transform: translateY(-50%);
-
 }
 
 /* Caption text */
@@ -253,10 +253,14 @@ input[type=text] {
 
 .banner-more {
   position: absolute;
+  border: 1px solid white;
+  border-radius: 100px;
   color: white;
   font-size: 15px;
+  font-weight: 300;
   left: 50%;
-  padding-left: 77px;
+  margin-left: 77px;
+  padding: 0 5px 0 5px;
   bottom: 20%;
   text-decoration: none;
 }
@@ -276,7 +280,7 @@ input[type=text] {
   top: 50%;
   width: auto;
   padding: 16px;
-  margin-top: -22px;
+  transform: translateY(-50%);
   color: white;
   font-weight: bold;
   font-size: 18px;
@@ -320,6 +324,7 @@ input[type=text] {
   background-color: #717171;
 }
 
+
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -329,13 +334,13 @@ input[type=text] {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  0% {opacity: .4}
+  100% {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  0% {opacity: .4}
+  100% {opacity: 1}
 }
 
 /* ### FIM DO SLIDESHOW ###*/
@@ -369,19 +374,28 @@ input[type=text] {
   }
 
   .slides {
-    flex-shrink: 0;
-  }
-
-  .banner-divisa {
     display: none;
   }
 
+  .banner-divisa {
+    border-top: 1px solid white;
+    border-right: none;
+    height: 0;
+    width: 200px;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -85%);
+
+  }
+
   .title-banner {
+    border: 3px solid white;
     left: 50%;
     right: 0;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -70%);
+    width: 55%;
     font-size: 25px;
-    padding: 0 21px 0 21px;
+    padding: 10% 3%;
   }
 
   .text-banner {
@@ -389,12 +403,9 @@ input[type=text] {
   }
 
   .banner-more{
-    font-size: 14px;
     left: 50%;
-    right: 0;
-    transform: translate(-50%, -50%);
+    transform: translate(-370%, -120%);
     text-align: center;
-    padding: 0;
     bottom: 14%;
   }
 

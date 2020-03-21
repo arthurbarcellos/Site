@@ -78,7 +78,7 @@ function carousel() {
   }    
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";  
-  t = setTimeout(carousel, 5000); // Change image every 5 seconds
+  t = setTimeout(carousel, 9000); // Change image every 9 seconds
 }
 
 function showSlides(n) {
@@ -100,5 +100,5 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
   clearTimeout(t);
-  t = setTimeout(carousel, 5000);
+  t = setTimeout(carousel, 9000);
 }
