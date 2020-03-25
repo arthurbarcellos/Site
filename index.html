@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
-    <title>Site</title>
+    
+    <link rel="stylesheet" href="owlcarousel/dist/assets/owl.carousel.css">
+    <link rel="stylesheet" href="owlcarousel/dist/assets/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <title>Colégio São Plácido</title>
 </head>
+
 <body>
     <div id="overlay" style="display: none;"></div>
     <header>
@@ -59,59 +64,47 @@
             <input id="searchbar" type="text" name="search" placeholder="Pesquisar...">
         </form> 
     </div>
-    
-    <!-- Banner container -->
+
+    <!--Banner container-->
     <div class="banner-container">
-        <div class="slides fade">
-            <img src="images/banners/banner1.png">
-            <a href="#slide1" class="title-banner">
-               Lorem ipsum dolor sit amet 
-            </a>
-            <a href="#slide1" class="text-banner">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac metus libero. Vestibulum venenatis, erat et iaculis elementum, est tortor lobortis libero, id ornare tortor nibh vitae nunc. 
-            </a>
-            <a href="#slide1" class="banner-more">
-                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-            </a>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="images/banner1.png" alt="banner1">
+            </div>
+            <div class="item">
+                <img src="images/banner2.png" alt="banner2">
+            </div>
+            <div class="item">
+                <img src="images/banner3.png" alt="banner3">
+            </div>
         </div>
-        <div class="slides fade">
-            <img src="images/banners/banner2.png">
-            <a href="#slide2" class="title-banner">
-                Donec vel mollis diam
-            </a>
-            <a href="#slide2" class="text-banner">
-                Donec vel mollis diam. Sed ultrices finibus laoreet. Etiam dolor neque, convallis vitae metus vel, finibus fringilla felis. Proin sodales, nibh quis consequat volutpat, magna diam commodo est, id ullamcorper felis eros quis risus.
-            </a>
-            <a href="#slide2" class="banner-more">
-                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-            </a>
-        </div>
-        <div class="slides fade">
-            <img src="images/banners/banner3.png">
-            <a href="#slide3" class="title-banner">
-                Vestibulum porttitor ultrices tincidunt
-            </a>
-            <a href="#slide3" class="text-banner">
-                Vestibulum porttitor ultrices tincidunt. Quisque dapibus condimentum mattis. Maecenas porttitor nunc quis blandit elementum. Nullam urna ligula, suscipit ut iaculis sit amet, dictum non odio.
-            </a>
-            <a href="#slide3" class="banner-more">
-                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-            </a>
-        </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        <div class="banner-dots">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
-        </div>
-        <div class="banner-divisa"></div>
-    </div>
+    </div> 
 
-    <div style="padding:15px 15px 2500px;font-size:30px;">
-        
-    </div>
+    <div style="padding-bottom: 1000px;"></div>
 
+    <!--Scripts, JQuerry e Owl-caroussel-->
+    <script src="owlcarousel/docs/assets/vendors/jquery.min.js"></script>
+    <script src="owlcarousel/dist/owl.carousel.js"></script>
     <script src="js/script.js"></script>
+
+
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+
+            $('.owl-carousel').owlCarousel({
+                items: 1,
+                loop:true,
+                margin:10,
+                nav:true,
+                navText:["<div class='nav-btn prev-slide'>&#8249;</div>","<div class='nav-btn next-slide'>&#8250;</div>"],
+                autoplay: true,
+                autoplayTimeout: 10000,
+            })
+
+        });
+
+    </script>
+
 </body>
 </html>
