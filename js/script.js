@@ -15,13 +15,13 @@ document.querySelector('body').addEventListener('mouseup', function(event){
   
   function scrollFunction() {
     if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
-      document.getElementById("topnavbar").style.padding = "50px 0px";
-      document.getElementById("logo").style.height = "70px";
-      document.getElementById("searchbar").style.top = "100px";
+      document.getElementById("topnavbar").style.padding = "35px 0px";
+      document.getElementById("logo").style.height = "60px";
+      document.getElementById("searchbar").style.top = "70px";
     } else {
-      document.getElementById("topnavbar").style.padding = "110px 0px";
-      document.getElementById("logo").style.height = "200px";
-      document.getElementById("searchbar").style.top = "220px";
+      document.getElementById("topnavbar").style.padding = "80px 0px";
+      document.getElementById("logo").style.height = "100px";
+      document.getElementById("searchbar").style.top = "160px";
     }
   }
   
@@ -39,7 +39,7 @@ document.querySelector('body').addEventListener('mouseup', function(event){
   
   function openSearchBar(){
     document.getElementById("searchbar").style.border = "1px solid #ccc";
-    document.getElementById("searchbar").style.height = "70px";
+    document.getElementById("searchbar").style.height = "60px";
     document.getElementById("searchbar").style.zIndex = "2";
   }
   
