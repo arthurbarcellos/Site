@@ -2,11 +2,13 @@
 document.querySelector('body').addEventListener('mouseup', function(event){
     var sidepanel = document.getElementById("sidepanelbar");
     var search = document.getElementById("searchbar");
+    var searchbutton = document.getElementById("searchbtn");
     if(event.target != sidepanel && event.target.parentNode != sidepanel){
       closeNav();
     }
-    if(event.target != search && event.target.parentNode != search){
-      closeSearchBar();
+    if(event.target != searchbutton && event.target.parentNode != searchbutton && event.target != search && event.target.parentNode != search){
+      //closeSearchBar();
+      $("input[type=text]").slideUp("fast");
     }
   });
   
@@ -48,3 +50,10 @@ document.querySelector('body').addEventListener('mouseup', function(event){
     document.getElementById("searchbar").style.border = "none";
     document.getElementById("searchbar").style.zIndex = "-1";
   }
+
+  //JQuerry
+  $(document).ready(function(){
+    $(".searchbtn").click(function(){
+      $("input[type=text]").slideToggle("fast");
+    });
+  });

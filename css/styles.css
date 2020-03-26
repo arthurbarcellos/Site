@@ -1,7 +1,7 @@
 body {
     margin: 160px 0 0 0;
     background-color: #fff;
-    font-family: 'Oxygen', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #overlay {
@@ -68,19 +68,20 @@ input[type=text] {
     position: fixed;
     top: 160px;
     width: 100%;
-    height: 0;
+    height: 60px;
     color: #666;
     box-sizing: border-box;
     border-radius: 0;
-    border: none;
+    border: 1px solid #ccc;
     font-size: 21px;
     background-color: white;
     padding: 0 0 0 50px;
     z-index: 2;
-    transition: 0.3s;
+    transition: top 0.3s;
+    display: none;
 }
 
-::placeholder{
+::placeholder {
     color: #ccc;
 }
 
@@ -252,11 +253,11 @@ input[type=text] {
     text-decoration: none;
     cursor: pointer;
     color: white;
-    top: 30px;
+    top: 80px;
     left: 50%;
     transform: translateX(-50%);
-    border: 5px solid white;
-    padding: 20px;
+    border: none;
+    padding: 0;
     text-align: center;
 }
 
@@ -265,11 +266,11 @@ input[type=text] {
     text-decoration: none;
     cursor: pointer;
     color: white;
-    bottom: 50px;
+    top: 270px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
 }
 
@@ -359,6 +360,7 @@ input[type=text] {
         top: 70px !important;
         position: fixed;
         padding-left: 25px;
+        transition: none;
     }
     
     .owl-carousel .nav-btn {
@@ -367,6 +369,9 @@ input[type=text] {
 
     .banner-caption h1 {
         width: 60%;
+        border: 5px solid white;
+        padding: 10px;
+        top: 20px;
     }
 
     .banner-caption p {
@@ -391,10 +396,10 @@ input[type=text] {
         display: block;
         position: absolute;
         color: white;
-        font-weight: 300;
         border: 1px solid white;
+        font-weight: 300;
         padding: 5px;
-        top: 65%;
+        top: 67%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
