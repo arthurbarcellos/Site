@@ -93,7 +93,7 @@ input[type=text] {
     z-index: 4; /* Stay on top */
     top: 0;
     left: -300px;
-    background-color: #26408d; 
+    background-color: white; 
     overflow-x: hidden; /* Disable horizontal scroll */
     overflow-y: auto;
     padding-top: 0; /* Place content 60px from the top */
@@ -106,25 +106,29 @@ input[type=text] {
     text-decoration: none;
     font-size: 16px;
     font-weight: 700;
-    color: #f2f2f2;
+    color: #3f528c;
     display: block;
     transition: 0.3s;
-    border-bottom: 1px solid #3f528c;
+    border-bottom: 1px solid #f2f2f2;
 }
 
 .sidepanel .home { 
-    border-left: 3px solid #ffd600;
+    border-left: 3px solid #8c8c8c;
 }
 
 .sidepanel .ativo a {
     padding: 60px 0 160px 30px;
-    border-bottom:1px solid #3f528c;
+    border-bottom:1px solid #f2f2f2;
+}
+
+.sidepanel .ativo a:hover {
+    background-color: transparent;
 }
 
 .ativo span {
-    color: #f2f2f2;
+    color: #3f528c;
     font-size: 21px;
-    font-weight: 300;
+    font-weight: 700;
     position: absolute;
     padding: 25px 0 0 10px;
     border-top: none;
@@ -141,23 +145,31 @@ input[type=text] {
     padding-left: 0;
 }
 
+.sidepanel .sociais a:hover {
+    color: #ffd600;
+    background-color: transparent;
+}
+
 .sidepanel p {
     font-size: 12px;
     font-weight: 300;
-    color: #f2f2f2;
+    color: #3f528c;
     padding-left: 32px;
+    font-weight: 500;
 }
 
 .copyright {
     display: block;
     font-size: 10px;
-    color: #f2f2f2;
+    color: #3f528c;
     padding: 300px 0 32px 32px;
+    font-weight: 700;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidepanel a:hover {
-    color: #ffd600;
+    
+    background-color: #ffd600;
 }
 
 /* Position and style the close button (top right corner) */
