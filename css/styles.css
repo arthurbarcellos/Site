@@ -202,13 +202,14 @@ input[type=text] {
 .banner-container {
     position: relative;
     max-width: 1920px;
-    margin: 0 50px 50px 50px;
+    margin: 0 50px 18px 50px;
 }
 
 .item img {
     height: 450px;
     object-fit: cover;
     width: 100%;
+    filter: brightness(70%);
 }
 
 .owl-carousel .nav-btn {
@@ -253,6 +254,7 @@ input[type=text] {
     text-decoration: none;
     cursor: pointer;
     color: white;
+    width: 90%;
     top: 80px;
     left: 50%;
     transform: translateX(-50%);
@@ -311,6 +313,85 @@ input[type=text] {
 
 /* ### FIM DO BANNER ###*/
 
+/* ### INNÍCIO DO GRID ###*/
+
+.grid-container {
+    height: 300px; 
+    background-color: #f2f2f2; 
+    padding: 50px 30px 50px 30px;
+}
+
+.row {
+    margin: 0;
+}
+
+.column {
+    box-sizing: border-box;
+    float: left;
+    width: 25%;
+    padding: 0 20px 0 20px;
+}
+
+.link-card {
+    text-decoration: none;
+    color: #3f528c;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.card {
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: 1px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    height: 300px;
+    transition: 0.3s;
+    border-top: 20px solid #8c8c8c;
+    border-bottom: 20px solid #8c8c8c;
+    /*
+    border-left: 20px solid #d9d9d9;
+    border-right: 20px solid #d9d9d9;
+    */
+}
+
+.card:hover {
+    background-color: #ffd600;
+}
+
+#img-up {
+    position: absolute;
+    max-width: 40px;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.3;   
+}
+
+#img-down {
+    position: absolute;
+    max-width: 30px;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.3;
+}
+
+.card h2 {
+    position: absolute;
+    border-top: 1px solid rgba(63, 82, 140, 0.3);
+    border-bottom: 1px solid rgba(63, 82, 140, 0.3);
+    padding: 12px 20px 14px 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+}
+
+/* ### FIM DO GRID ###*/
+
+
 /*##############*/
 /* Medium screns*/
 /*##############*/
@@ -318,11 +399,21 @@ input[type=text] {
 @media screen and (max-width: 1024px) {
 
     .banner-container {
-        margin: 0;
+        margin-right: 0;
+        margin-left: 0;
     }
 
     .banner-caption p {
         width: 70%;
+    }
+
+    .grid-container {
+        height: 640px;
+    }
+
+    .column {
+        width: 50%;
+        padding-bottom: 40px;
     }
 
 }
@@ -402,6 +493,18 @@ input[type=text] {
         top: 67%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+
+    .grid-container {
+        height: 1320px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .column {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
     }
 
 }
