@@ -403,6 +403,54 @@ input[type=text] {
 
 /* ### FIM DO GRID ###*/
 
+/* ### INÍCIO DO BEM VINDO ###*/
+
+.welcome-container {
+    height: auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.lema {
+    color: #3f528c;
+    font-size: 50px;
+    padding: 30px;
+}
+
+.lema-mobile {
+    font-size: 30px;
+    font-weight: 700;
+    color: #3f528c;
+    padding: 30px;
+    display: none;
+}
+
+.yellow-bar {
+    position: absolute;
+    height: 0;
+    width: 100px;
+    border-top: 7px solid #ffd600;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.welcome {
+    font-size: 21px;
+    color: #8c8c8c;
+    padding-top: 50px;
+}
+
+.welcome-container p {
+    padding: 40px 200px 0 200px;
+    color: #8c8c8c;
+    margin: 0 50px 0 50px;
+    font-size: 16px;
+    background-color: white;
+    height: 100%;
+}
+
+/* ### FIM DO BEM VINDO ###*/
+
 
 /*##############*/
 /* Medium screns*/
@@ -426,6 +474,14 @@ input[type=text] {
     .column {
         width: 50%;
         padding-bottom: 40px;
+    }
+
+    .lema {
+        font-size: 40px;
+    }
+
+    .welcome-container p {
+        padding: 40px 100px 0 100px;
     }
 
 }
@@ -517,6 +573,24 @@ input[type=text] {
         width: 100%;
         padding-left: 0;
         padding-right: 0;
+    }
+
+    .lema {
+        display: none;
+    }
+
+    .lema-mobile {
+        display: block;
+    }
+
+    .welcome-container p {
+        padding: 40px 0 0 0;
+    }
+
+    .welcome {
+        font-size: 21px;
+        color: #8c8c8c;
+        padding-top: 50px;
     }
 
 }
