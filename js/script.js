@@ -39,35 +39,34 @@ document.querySelector('body').addEventListener('mouseup', function(event){
     document.getElementById("overlay").style.display = "none";
   }
 
-  function scrollWelcome() {
-
-    if(window.matchMedia("(max-width: 728px)").matches) {
-      /* The viewport is less than, or equal to, 700 pixels wide */
-      window.scroll({
-        top: 1920,
-        left: 0,
-        behavior: 'smooth'
-      })
-    }
-    else if(window.matchMedia("(max-width: 1024px)").matches) {
-      window.scroll({
-        top: 1330,
-        left: 0,
-        behavior: 'smooth'
-      })
-    }
-    else {
-      window.scroll({
-        top: 990,
-        left: 0,
-        behavior: 'smooth'
-      })
-    }
-  }
-
   //JQuerry
   $(document).ready(function(){
     $(".searchbtn").click(function(){
       $("input[type=text]").slideToggle("fast");
+    });
+  });
+
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $(".down-button").on('click', function(event) {
+  
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+  
+        // Store hash
+        var hash = this.hash;
+  
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+  
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
     });
   });
