@@ -183,6 +183,11 @@ input[type=text] {
     border: none;
 }
 
+.sidepanel .closebtn:hover {
+    color: #ffd600;
+    background-color: transparent;
+}
+
 /* Style the button that is used to open the sidepanel */
 .menu {
     font-size: 30px;
@@ -322,6 +327,22 @@ input[type=text] {
     display: none;
 }
 
+.down-button {
+    position: absolute;
+    color: #8c8c8c;
+    border: none;
+    font-size: 35px;
+    left: 50%;
+    transform: translate(-50%, -32px);
+    cursor: pointer;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+.down-button:hover {
+    color: #3f528c;
+    font-size: 40px;
+}
 
 /* ### FIM DO BANNER ###*/
 
@@ -412,12 +433,14 @@ input[type=text] {
 }
 
 .lema {
+    font-family: 'Cinzel';
     color: #3f528c;
     font-size: 50px;
     padding: 30px;
 }
 
 .lema-mobile {
+    font-family: 'Cinzel';
     font-size: 30px;
     font-weight: 700;
     color: #3f528c;

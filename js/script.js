@@ -7,7 +7,7 @@ document.querySelector('body').addEventListener('mouseup', function(event){
       closeNav();
     }
     if(event.target != searchbutton && event.target.parentNode != searchbutton && event.target != search && event.target.parentNode != search){
-      //closeSearchBar();
+      //JQuerry
       $("input[type=text]").slideUp("fast");
     }
   });
@@ -38,17 +38,31 @@ document.querySelector('body').addEventListener('mouseup', function(event){
     document.getElementById("sidepanelbar").style.left = "-300px";
     document.getElementById("overlay").style.display = "none";
   }
-  
-  function openSearchBar(){
-    document.getElementById("searchbar").style.border = "1px solid #ccc";
-    document.getElementById("searchbar").style.height = "60px";
-    document.getElementById("searchbar").style.zIndex = "2";
-  }
-  
-  function closeSearchBar(){
-    document.getElementById("searchbar").style.height = "0";
-    document.getElementById("searchbar").style.border = "none";
-    document.getElementById("searchbar").style.zIndex = "-1";
+
+  function scrollWelcome() {
+
+    if(window.matchMedia("(max-width: 728px)").matches) {
+      /* The viewport is less than, or equal to, 700 pixels wide */
+      window.scroll({
+        top: 1920,
+        left: 0,
+        behavior: 'smooth'
+      })
+    }
+    else if(window.matchMedia("(max-width: 1024px)").matches) {
+      window.scroll({
+        top: 1330,
+        left: 0,
+        behavior: 'smooth'
+      })
+    }
+    else {
+      window.scroll({
+        top: 990,
+        left: 0,
+        behavior: 'smooth'
+      })
+    }
   }
 
   //JQuerry
