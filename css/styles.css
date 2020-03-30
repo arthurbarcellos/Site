@@ -209,7 +209,7 @@ input[type=text] {
     position: absolute;
     font-size: 21px;
     font-weight: 300;
-    padding: 6px 0 0 8px;
+    padding: 7px 0 0 8px;
 }
   
 /* ### FIM DO CABEÇALHO ###*/
@@ -355,11 +355,11 @@ input[type=text] {
     padding: 50px 30px 50px 30px;
 }
 
-.row {
+.grid-container .row {
     margin: 0;
 }
 
-.column {
+.grid-container .column {
     box-sizing: border-box;
     float: left;
     width: 25%;
@@ -385,10 +385,6 @@ input[type=text] {
     transition: 0.3s;
     border-top: 20px solid #8c8c8c;
     border-bottom: 20px solid #8c8c8c;
-    /*
-    border-left: 20px solid #d9d9d9;
-    border-right: 20px solid #d9d9d9;
-    */
 }
 
 .card:hover {
@@ -398,7 +394,7 @@ input[type=text] {
 #img-up {
     position: absolute;
     max-width: 40px;
-    top: 40px;
+    top: 30px;
     left: 50%;
     transform: translateX(-50%);
     opacity: 0.3;   
@@ -407,7 +403,7 @@ input[type=text] {
 #img-down {
     position: absolute;
     max-width: 30px;
-    bottom: 50px;
+    bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
     opacity: 0.3;
@@ -417,10 +413,16 @@ input[type=text] {
     position: absolute;
     border-top: 1px solid rgba(63, 82, 140, 0.3);
     border-bottom: 1px solid rgba(63, 82, 140, 0.3);
-    padding: 12px 20px 14px 20px;
+    padding: 5px 20px 14px 20px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -90%);
+    transform: translate(-50%, -75%);
+}
+
+.card h2 span {
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0.7;
 }
 
 /* ### FIM DO GRID ###*/
@@ -437,21 +439,13 @@ input[type=text] {
     font-family: 'Cinzel';
     color: #3f528c;
     font-size: 50px;
-    padding: 30px;
-}
-
-.lema-mobile {
-    font-family: 'Cinzel';
-    font-size: 28px;
-    color: #3f528c;
-    padding: 30px;
-    display: none;
+    padding: 20px 0 30px 0;
 }
 
 .yellow-bar {
     position: absolute;
     height: 0;
-    width: 100px;
+    width: 70px;
     border-top: 7px solid #ffd600;
     left: 50%;
     transform: translateX(-50%);
@@ -475,6 +469,118 @@ input[type=text] {
 /* ### FIM DO BEM VINDO ###*/
 
 
+/* ### INÍCIO DO GRID INFO ###*/
+
+.grid-more-info {
+    display: grid;
+    background-color: #f2f2f2;
+    box-sizing: border-box;
+}
+
+.grid-more-info .row {
+    margin: 0 30px;
+}
+
+.grid-more-info .column {
+    box-sizing: border-box;
+    float: left;
+    width: 33.33%;
+    padding: 0 20px 0 20px;
+}
+
+.grid-more-info .content {
+    color: #808080;
+    position: relative;
+    text-align: center;
+    border: 1px solid transparent;
+    padding-bottom: 50px;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    min-height: 470px;
+    background-color: white;
+    box-shadow: 1px 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.grid-more-info a {
+    text-decoration: none;
+    color: #808080;
+    font-size: 18px;
+    padding: 0;
+}
+
+.grid-more-info a h3 {
+    font-family: 'Cinzel';
+}
+
+.grid-more-info a:hover {
+    color: #ffd600;
+}
+
+.grid-more-info ol {
+    text-align: left;
+    font-size: 16px;
+    margin: 0;
+    padding: 20px 70px 5px 70px;
+}
+
+.grid-more-info li a {
+    font-size: 16px;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+.grid-more-info li a:hover {
+    color: #ffd600;
+}
+
+.grid-more-info p {
+    text-align: left;
+    font-size: 16px;
+    padding: 20px 60px 5px 60px;
+}
+
+.content img {
+    position: absolute;
+    max-width: 30px;
+    padding: 5px;
+}
+
+.column .content #up-left {
+    transform: rotate(-45deg);
+    left: 0;
+}
+
+.content #up-right {
+    transform: rotate(45deg);
+    right: 0;
+}
+
+.content #down-left {
+    transform: rotate(-135deg);
+    left: 0;
+    bottom: 0;
+}
+
+.content #down-right {
+    transform: rotate(135deg);
+    right: 0;
+    bottom: 0;
+}
+
+.content #logo-back {
+    max-width: 40px;
+    left: 50%;
+    opacity: 0.3;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+/* ### FIM DO GRID INFO ###*/
+
+
 /*##############*/
 /* Medium screns*/
 /*##############*/
@@ -494,7 +600,7 @@ input[type=text] {
         height: 640px;
     }
 
-    .column {
+    .grid-container .column {
         width: 50%;
         padding-bottom: 40px;
     }
@@ -505,6 +611,19 @@ input[type=text] {
 
     .welcome-container p {
         padding: 40px 100px 0 100px;
+    }
+
+    .grid-more-info .column {
+        width: 100%;
+    }
+
+    .grid-more-info {
+        padding-bottom: 50px;
+    }
+
+    .grid-more-info .content {
+        margin-bottom: 0;
+        min-height: 300px;
     }
 
 }
@@ -592,18 +711,15 @@ input[type=text] {
         padding-right: 0;
     }
 
-    .column {
+    .grid-container .column {
         width: 100%;
         padding-left: 0;
         padding-right: 0;
     }
 
     .lema {
-        display: none;
-    }
-
-    .lema-mobile {
-        display: block;
+        font-size: 28px;
+        padding: 30px;
     }
 
     .welcome-container p {
@@ -614,6 +730,35 @@ input[type=text] {
         font-size: 21px;
         color: #8c8c8c;
         padding-top: 50px;
+    }
+
+    .grid-more-info {
+        padding-bottom: 10px;
+    }
+
+    .grid-more-info .content {
+        margin-top: 10px;
+        margin-bottom: 0;
+        min-height: 300px;
+    }
+
+    .grid-more-info .row {
+        margin: 0 10px 0 10px;
+    }
+
+    .grid-more-info .column {
+        padding: 0;
+    }
+
+    .grid-more-info ol {
+        font-size: 15px;
+        margin: 0;
+        padding: 20px 50px 5px 50px;
+    }
+
+    .grid-more-info p {
+        font-size: 15px;
+        padding: 20px 35px 5px 35px;
     }
 
 }
