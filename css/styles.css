@@ -500,6 +500,7 @@ input[type=text] {
     min-height: 470px;
     background-color: white;
     box-shadow: 1px 4px 8px 0 rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
 }
 
 .grid-more-info a {
@@ -514,7 +515,8 @@ input[type=text] {
 }
 
 .grid-more-info a:hover {
-    color: #ffd600;
+    color: #3f528c;
+    text-decoration: underline;
 }
 
 .grid-more-info ol {
@@ -533,7 +535,8 @@ li {
 }
 
 .grid-more-info li a:hover {
-    color: #ffd600;
+    color: #3f528c;
+    text-decoration: underline;
 }
 
 .grid-more-info p {
