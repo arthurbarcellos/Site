@@ -97,7 +97,7 @@ input[type=text] {
     overflow-x: hidden; /* Disable horizontal scroll */
     overflow-y: auto;
     padding-top: 0; /* Place content 60px from the top */
-    transition: 0.3s; /* 0.5 second transition effect to slide in the sidepanel */
+    transition: 0.3s; /* 0.3 second transition effect to slide in the sidepanel */
 }
 
 /* The sidepanel links */
@@ -388,7 +388,9 @@ input[type=text] {
 }
 
 .card:hover {
-    background-color: #ffd600;
+  
+    border-top: 20px solid #ffd600;
+    border-bottom: 20px solid #ffd600;
 }
 
 #img-up {
@@ -473,7 +475,7 @@ input[type=text] {
 
 .grid-more-info {
     display: grid;
-    background-color: #f2f2f2;
+    background-color: #ffd600;
     box-sizing: border-box;
 }
 
@@ -489,60 +491,32 @@ input[type=text] {
 }
 
 .grid-more-info .content {
-    color: #808080;
+    color: white;
     position: relative;
     text-align: center;
-    border: 1px solid transparent;
-    padding-bottom: 50px;
+    border: 7px solid white;
     height: auto;
     margin-top: 50px;
     margin-bottom: 50px;
-    min-height: 470px;
-    background-color: white;
-    box-shadow: 1px 4px 8px 0 rgba(0, 0, 0, 0.3);
+    min-height: 150px;
     transition: 0.3s;
+}
+
+.content:hover {
+    background-color: #8c8c8c;
 }
 
 .grid-more-info a {
     text-decoration: none;
-    color: #808080;
-    font-size: 18px;
+    color: white;
     padding: 0;
 }
 
-.grid-more-info a h3 {
-    font-family: 'Cinzel';
-}
-
-.grid-more-info a:hover {
-    color: #3f528c;
-    text-decoration: underline;
-}
-
-.grid-more-info ol {
-    text-align: left;
-    font-size: 16px;
-    margin: 0;
-    padding: 20px 70px 5px 70px;
-}
-
-.grid-more-info li a {
-    font-size: 16px;
-}
-
-li {
-    margin-bottom: 20px;
-}
-
-.grid-more-info li a:hover {
-    color: #3f528c;
-    text-decoration: underline;
-}
-
 .grid-more-info p {
-    text-align: left;
-    font-size: 16px;
-    padding: 20px 60px 5px 60px;
+    font-family: 'Cinzel';
+    font-size: 25px;
+    font-weight: 700;
+    transform: translateY(100%);
 }
 
 .content img {
@@ -570,14 +544,6 @@ li {
 .content #down-right {
     transform: rotate(135deg);
     right: 0;
-    bottom: 0;
-}
-
-.content #logo-back {
-    max-width: 40px;
-    left: 50%;
-    opacity: 0.3;
-    transform: translateX(-50%);
     bottom: 0;
 }
 
@@ -626,7 +592,11 @@ li {
 
     .grid-more-info .content {
         margin-bottom: 0;
-        min-height: 300px;
+    }
+
+    .grid-more-info p {
+        font-size: 35px;
+        transform: translateY(40%);
     }
 
 }
@@ -742,7 +712,7 @@ li {
     .grid-more-info .content {
         margin-top: 10px;
         margin-bottom: 0;
-        min-height: 300px;
+       
     }
 
     .grid-more-info .row {
@@ -753,15 +723,9 @@ li {
         padding: 0;
     }
 
-    .grid-more-info ol {
-        font-size: 15px;
-        margin: 0;
-        padding: 20px 50px 5px 50px;
-    }
-
     .grid-more-info p {
-        font-size: 15px;
-        padding: 20px 35px 5px 35px;
+        font-size: 22px;
+        transform: translateY(135%);
     }
 
 }
