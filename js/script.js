@@ -39,7 +39,7 @@ function closeNav() {
   document.getElementById("overlay").style.display = "none";
 }
 
-// Dropdown 
+// Dropdown menu
 var dropdown = document.getElementsByClassName("dropdown-btn");
 var i;
 
