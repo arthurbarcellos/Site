@@ -55,13 +55,20 @@ for (i = 0; i < dropdown.length; i++) {
   });
 }
 
-//JQuerry
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+//JQuerry//
+
 $(document).ready(function(){
   $(".searchbtn").click(function(){
     $("input[type=text]").slideToggle("fast");
   });
 });
 
+// Scroll smoothly to welcome
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $(".down-button").on('click', function(event) {
@@ -84,5 +91,13 @@ $(document).ready(function(){
         window.location.hash = hash;
       });
     } // End if
+  });
+});
+
+// Scrool smoothly to top
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $(".scroll-top").on('click', function(event) {
+    $('html, body').animate({scrollTop: 0}, 800);
   });
 });
