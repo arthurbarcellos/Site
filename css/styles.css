@@ -15,6 +15,7 @@ body {
     display: none;
     text-align: center;
     z-index: 3;
+    -webkit-transition: 0.4s;
     transition: 0.4s;
 }
   
@@ -30,11 +31,23 @@ body {
 }
 
 .topnav-centered a {
-    float: none;
+    display: block;
+    float: left;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+#logo-name {
+    float: right;
+    text-decoration: none;
+    color: #26408d;
+    font-size: 21px;
+    font-weight: 700;
+    margin-top: 22px;
+    -webkit-transition: ease 0.4s;
+    transition: ease 0.4s;
 }
 
 #logo {
@@ -77,6 +90,7 @@ input[type=text] {
     background-color: white;
     padding: 0 0 0 50px;
     z-index: 2;
+    -webkit-transition: top 0.3s;
     transition: top 0.3s;
     display: none;
 }
@@ -97,6 +111,7 @@ input[type=text] {
     overflow-x: hidden; /* Disable horizontal scroll */
     overflow-y: auto;
     padding-top: 0; /* Place content 60px from the top */
+    -webkit-transition: 0.3s;
     transition: 0.3s; /* 0.3 second transition effect to slide in the sidepanel */
 }
 
@@ -108,9 +123,10 @@ input[type=text] {
     font-weight: 700;
     color: #26408d;
     display: block;
-    transition: 0.3s;
     border-bottom: 1px solid #f2f2f2;
     cursor: pointer;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
 }
 
 .dropdown-btn i {
@@ -136,7 +152,7 @@ input[type=text] {
 }
 
 .sidepanel .ativo a {
-    padding: 60px 0 160px 30px;
+    padding: 60px 0 140px 30px;
     border-bottom:1px solid #f2f2f2;
 }
 
@@ -146,7 +162,7 @@ input[type=text] {
 
 .ativo span {
     color: #26408d;
-    font-size: 21px;
+    font-size: 17px;
     font-weight: 700;
     position: absolute;
     padding: 25px 0 0 10px;
@@ -155,6 +171,7 @@ input[type=text] {
 
 .sidepanel .sociais {
     padding: 20px 0 0 32px;
+    -webkit-transition: 0.3s;
     transition: 0.3s;
 }
 
@@ -208,6 +225,7 @@ input[type=text] {
 
 /* Style the button that is used to open the sidepanel */
 .menu {
+    display: block;
     font-size: 30px;
     cursor: pointer;
     background-color: transparent;
@@ -254,7 +272,8 @@ input[type=text] {
     transform: translateY(-70%);
     font-size: 40px;
     color: white;
-    transition: 0.6s ease;
+    -webkit-transition: ease 0.6s;
+    transition: ease 0.6s;
     padding: 10px 20px 15px 20px;
 }
 
@@ -399,6 +418,7 @@ input[type=text] {
     background-color: white;
     width: 100%;
     height: 300px;
+    -webkit-transition: 0.3s;
     transition: 0.3s;
     border-top: 20px solid #8c8c8c;
     border-bottom: 20px solid #8c8c8c;
@@ -515,6 +535,7 @@ input[type=text] {
     margin-top: 50px;
     margin-bottom: 50px;
     min-height: 150px;
+    -webkit-transition: 0.3s;
     transition: 0.3s;
 }
 
@@ -644,12 +665,15 @@ input[type=text] {
 
 .footer-container .column i {
     margin-right: 20px;
+    font-size: 17px;
 }
 
 .footer-container .column p , .footer-container .column a {
     color: white;
     text-decoration: none;
+    font-size: 14px;
     font-weight: 300;
+    -webkit-transition: 0.3s;
     transition: 0.3s;
 }
 
@@ -695,6 +719,7 @@ input[type=text] {
     text-align: center;
     padding: 0;
     border-top: 5px solid #8c8c8c;
+    border-bottom: 5px solid #8c8c8c;
 }
 
 .end .lema {
@@ -820,6 +845,10 @@ input[type=text] {
     
     #logo {
         height: 60px !important;
+    }
+
+    #logo-name {
+        display: none;
     }
 
     .menu span {
@@ -967,7 +996,7 @@ input[type=text] {
         padding: 0;
         margin-top: 10px;
         margin-bottom: 10px;
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     }
 
     #last-column {
@@ -984,10 +1013,10 @@ input[type=text] {
 
     .end .designed {
         position: relative;
+        font-size: 10px;
         float: none;
         right: 0;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin: 0;
     }
 
 }

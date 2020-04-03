@@ -20,10 +20,12 @@ function scrollFunction() {
     document.getElementById("topnavbar").style.padding = "35px 0px";
     document.getElementById("logo").style.height = "60px";
     document.getElementById("searchbar").style.top = "70px";
+    document.getElementById("logo-name").style.fontSize = "0";
   } else {
     document.getElementById("topnavbar").style.padding = "80px 0px";
     document.getElementById("logo").style.height = "100px";
     document.getElementById("searchbar").style.top = "160px";
+    document.getElementById("logo-name").style.fontSize = "21px";
   }
 }
 

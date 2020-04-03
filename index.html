@@ -26,7 +26,10 @@
             </div>
             <!-- Centered link -->
             <div class="topnav-centered">
-                <a href="#home" ><img id="logo" src="./images/logo-icon.png" alt="logo-colegio" style="height:100px;"></a>
+                <a href="#home" >
+                    <img id="logo" src="./images/logo-icon.png" alt="logo-colegio" style="height:100px;">
+                    <span id="logo-name">Colégio<br>São Plácido</span>
+                </a>
             </div>
             <!-- Right-aligned links -->
             <div class="topnav-right">
@@ -35,6 +38,7 @@
                 </a>
             </div>
         </div>
+
         <!--Sidepanel navigation-->
         <div class="sidepanel" id="sidepanelbar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -261,9 +265,15 @@
         <div class="footer-container">
             <div class="column">
                 <h4>CONTATO</h4>
-                <p><i class="fa fa-whatsapp" aria-hidden="true"></i>(00) 12345-6789</p>
-                <p><i class="fa fa-phone" aria-hidden="true"></i>1234-5678</p>
-                <p><i class="fa fa-envelope" aria-hidden="true"></i>example@email.com</p>
+                <p>
+                    <a href="#whatsapp"><i class="fa fa-whatsapp" aria-hidden="true"></i>(00) 12345-6789</a>
+                </p>
+                <p>
+                    <a href="#fone"><i class="fa fa-phone" aria-hidden="true"></i>1234-5678</a>
+                </p>
+                <p>
+                    <a href="#email"><i class="fa fa-envelope" aria-hidden="true"></i>example@email.com</a>
+                </p>
                 <br>
                 <h4>REDES SOCIAIS</h4>
                 <a href="#facebook"><i class="fa fa-facebook-f"></i></a>
@@ -314,6 +324,7 @@
                 navText:["<div class='nav-btn prev-slide'>&#8249;</div>","<div class='nav-btn next-slide'>&#8250;</div>"],
                 autoplay: true,
                 autoplayTimeout: 10000,
+                autoplayHoverPause: true,
             })
 
         });
