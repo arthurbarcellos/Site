@@ -242,6 +242,7 @@ input[type=text] {
 }
 
 .menu span {
+    display: inline;
     position: absolute;
     font-size: 21px;
     font-weight: 300;
@@ -481,7 +482,7 @@ input[type=text] {
 }
 
 .yellow-bar {
-    position: absolute;
+    position: relative;
     height: 0;
     width: 70px;
     border-top: 7px solid #ffd600;
@@ -718,15 +719,15 @@ input[type=text] {
     background-color: white;
     text-align: center;
     padding: 0;
-    border-top: 5px solid #8c8c8c;
-    border-bottom: 5px solid #8c8c8c;
+    
 }
 
 .end .lema {
     font-family: 'Cinzel';
-    color: #26408d;
+    color: #8c8c8c;
     font-size: 40px;
     padding: 0;
+    opacity: 0.3;
 }
 
 .end .designed {

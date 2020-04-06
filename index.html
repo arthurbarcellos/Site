@@ -16,70 +16,71 @@
 
 <body>
     <div id="overlay" style="display: none;"></div>
-    <header>
-        <!-- Top navigation -->
-        <div class="topnav" id="topnavbar">
-            <!-- Left-aligned links (default) -->
-            <div class="menu" onclick="openNav()">
-                <i class="fa fa-bars"></i>
-                <span>MENU</span>
-            </div>
-            <!-- Centered link -->
-            <div class="topnav-centered">
-                <a href="#home" >
-                    <img id="logo" src="./images/logo-icon.png" alt="logo-colegio" style="height:100px;">
-                    <span id="logo-name">Colégio<br>São Plácido</span>
-                </a>
-            </div>
-            <!-- Right-aligned links -->
-            <div class="topnav-right">
-                <a role="button" class="searchbtn" id="searchbtn">
-                    <i class="fa fa-search"></i>
-                </a>
-            </div>
-        </div>
 
-        <!--Sidepanel navigation-->
-        <div class="sidepanel" id="sidepanelbar">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="ativo">
-                <a href="#home">
-                    <img src="./images/logo-icon.png" alt="logo" style="height:100px;float: left;">
-                    <span>Colégio<br>São Plácido</span>
-                </a>
-            </div>
-            <a href="#home" class="home">Home</a>
-            <div class="dropdown-btn">O Colégio<i class="fa fa-chevron-down" aria-hidden="true"></i></div>
-            <div class="dropdown-container">
-                <a href="#ocolegio">Quem somos</a>
-                <a href="#ocolegio">Proposta Pedagógica</a>
-                <a href="#ocolegio">Patrono</a>
-            </div>
-            <div class="dropdown-btn">Ensino<i class="fa fa-chevron-down" aria-hidden="true"></i></div>
-            <div class="dropdown-container">
-                <a href="#ensino">Formação Religiosa</a>
-                <a href="#ensino">Formação Linguística</a>
-                <a href="#ensino">Formação Artística</a>
-                <a href="#ensino">Educação Nutricional</a>
-              </div> 
-            <div class="dropdown-btn">Informações<i class="fa fa-chevron-down" aria-hidden="true"></i></div>
-            <div class="dropdown-container">
-                <a href="#informacoes">Notícias</a>
-                <a href="#informacoes">Eventos</a>
-                <a href="#informacoes">Doações</a>
-            </div>  
-            <a href="#galeria">Galeria</a>
-            <a href="#contato">Contato</a>
-            <div class="sociais">
-                <a href="#facebook"><i class="fa fa-facebook-f"></i></a>
-                <a href="#instagram"><i class="fa fa-instagram"></i></a>
-                <a href="#twitter"><i class="fa fa-twitter"></i></a>
-                <a href="#youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-            </div>
-            <p>Compartilhe!</p>
-            <div class="copyright">Todos os direitos reservados. &copy;</div>
+    <header></header>
+
+    <!-- Top navigation -->
+    <div class="topnav" id="topnavbar">
+        <!-- Left-aligned links (default) -->
+        <div class="menu" onclick="openNav()">
+            <i class="fa fa-bars"></i>
+            <span>MENU</span>
         </div>
-    </header>
+        <!-- Centered link -->
+        <div class="topnav-centered">
+            <a href="index.html" >
+                <img id="logo" src="./images/logo-icon.png" alt="logo-colegio" style="height:100px;">
+                <span id="logo-name">Colégio<br>São Plácido</span>
+            </a>
+        </div>
+        <!-- Right-aligned links -->
+        <div class="topnav-right">
+            <a role="button" class="searchbtn" id="searchbtn">
+                <i class="fa fa-search"></i>
+            </a>
+        </div>
+    </div>
+
+    <!--Sidepanel navigation-->
+    <div class="sidepanel" id="sidepanelbar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="ativo">
+            <a href="index.html">
+                <img src="./images/logo-icon.png" alt="logo" style="height:100px;float: left;">
+                <span>Colégio<br>São Plácido</span>
+            </a>
+        </div>
+        <a href="index.html" class="home">Home</a>
+        <div class="dropdown-btn">O Colégio<i class="fa fa-chevron-down" aria-hidden="true"></i></div>
+        <div class="dropdown-container">
+            <a href="quem-somos.html">Quem somos</a>
+            <a href="#ocolegio">Proposta Pedagógica</a>
+            <a href="#ocolegio">Patrono</a>
+            <a href="galeria-de-fotos.html">Galeria de Fotos</a>
+        </div>
+        <div class="dropdown-btn">Ensino<i class="fa fa-chevron-down" aria-hidden="true"></i></div>
+        <div class="dropdown-container">
+            <a href="#ensino">Formação Religiosa</a>
+            <a href="#ensino">Formação Linguística</a>
+            <a href="#ensino">Formação Artística</a>
+            <a href="#ensino">Educação Nutricional</a>
+            </div> 
+        <div class="dropdown-btn">Informações<i class="fa fa-chevron-down" aria-hidden="true"></i></div>
+        <div class="dropdown-container">
+            <a href="#informacoes">Notícias</a>
+            <a href="#informacoes">Eventos</a>
+            <a href="#informacoes">Doações</a>
+        </div>  
+        <a href="#contato">Contato</a>
+        <div class="sociais">
+            <a href="#facebook"><i class="fa fa-facebook-f"></i></a>
+            <a href="#instagram"><i class="fa fa-instagram"></i></a>
+            <a href="#twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+        </div>
+        <p>Compartilhe!</p>
+        <div class="copyright">Todos os direitos reservados. &copy;</div>
+    </div>
 
     <!--Search bar-->
     <div>
@@ -261,7 +262,7 @@
     </div>
 
     <!--Footer-->
-    <div class="footer" style="display: grid; background-color: #26408d; border-top: 5px solid #8c8c8c;">
+    <div class="footer" style="display: grid; background-color: #26408d;">
         <div class="footer-container">
             <div class="column">
                 <h4>CONTATO</h4>

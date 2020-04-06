@@ -1,0 +1,141 @@
+.main-content {
+    margin: 50px;
+    display: grid;
+}
+
+.main-content .header h1 {
+    font-family: 'Cinzel';
+    color: #26408d;
+    text-align: center;
+    font-weight: 300;
+    padding-top: 50px;
+    margin: 0 10px 0 10px;
+}
+
+.main-content .text {
+    position: relative;
+    float: none;
+    margin-top: 50px;
+    color: #8c8c8c;
+    width: 50%;
+    text-align: justify;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main-content .yellow-bar {
+    position: relative;
+    height: 0;
+    width: 70px;
+    border-top: 7px solid #ffd600;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
+}
+
+.main-content a {
+    text-decoration: none;
+    font-size: 21px; color:#26408d;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.main-content a:hover {
+    text-decoration: underline;
+}
+
+.gallery-container {
+    position: relative;
+    float: none;
+    margin-top: 50px;
+    padding: 0;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #26408d;
+}
+
+.main-content .owl-carousel {
+    position: relative;
+    display: grid;
+}
+
+.main-content .owl-carousel .item img {
+    filter: brightness(1); 
+    height: auto;
+    object-fit: cover;
+}
+
+.main-content .owl-carousel .nav-btn {
+    position: absolute;
+    cursor: pointer;
+    top: 50% ;
+    transform: translateY(-120%);
+    font-size: 40px;
+    color: #26408d;
+    padding: 0;
+    margin: 0;
+}
+
+.main-content .owl-carousel .nav-btn:hover {
+    background-color: transparent;
+}
+
+.main-content .owl-carousel .prev-slide {
+    left: -70px;
+}
+
+.main-content .owl-carousel .next-slide {
+    right: -65px;
+}
+
+.main-content .owl-dots {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: none;
+}
+
+/*##############*/
+/* Medium screns*/
+/*##############*/
+
+@media screen and (max-width: 1024px) {
+
+    .main-content .text {
+        width: 70%;
+    }
+
+    .gallery-container {
+        width: 70%;
+    }
+
+}
+
+/*##############*/
+/* Smalls screns*/
+/*##############*/
+@media screen and (max-width: 760px) {
+
+    .main-content {
+        margin: 50px 0 50px 0;
+        display: grid;
+    }
+
+    .main-content .text {
+        width: 80%;
+    }
+
+    .main-content a {
+        text-decoration: none;
+        font-size: 14px; color:#26408d;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .gallery-container {
+        width: 100%;
+    }
+
+}
