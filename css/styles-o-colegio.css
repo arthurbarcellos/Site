@@ -12,6 +12,18 @@
     margin: 0 10px 0 10px;
 }
 
+.main-content h3 {
+    text-align: center;
+}
+
+.main-content #patrono {
+    position: relative;
+    margin-top: 50px; 
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
 .main-content .text {
     position: relative;
     float: none;
@@ -121,6 +133,10 @@
     .main-content {
         margin: 50px 0 50px 0;
         display: grid;
+    }
+
+    .main-content #patrono {
+        width: 80%;
     }
 
     .main-content .text {
