@@ -45,11 +45,15 @@
     margin-top: 50px;
 }
 
+.main-content span {
+    text-align: center;
+    margin-top: 50px;
+    padding: 0;
+}
+
 .main-content a {
     text-decoration: none;
     font-size: 21px; color:#26408d;
-    text-align: center;
-    margin-top: 50px;
 }
 
 .main-content a:hover {
