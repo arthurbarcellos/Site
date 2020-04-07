@@ -30,6 +30,33 @@ body {
     z-index: 2;
 }
 
+/* Style the button that is used to open the sidepanel */
+.menu {
+    display: flex;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: transparent;
+    color: gray;
+    position: absolute;
+    padding: 0;
+    border: none;
+    margin-left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menu:hover {
+    color: #444;
+}
+
+.menu span {
+    display: inline;
+    position: relative;
+    font-size: 21px;
+    font-weight: 300;
+    padding: 2px 0 0 8px;
+}
+
 .topnav-centered a {
     display: block;
     float: left;
@@ -222,32 +249,6 @@ input[type=text] {
     color: #ffd600;
     background-color: transparent;
 }
-
-/* Style the button that is used to open the sidepanel */
-.menu {
-    display: block;
-    font-size: 30px;
-    cursor: pointer;
-    background-color: transparent;
-    color: gray;
-    position: absolute;
-    padding: 0;
-    border: none;
-    top: 50%;
-    transform: translate(200%, -50%);
-}
-
-.menu:hover {
-    color: #444;
-}
-
-.menu span {
-    display: inline;
-    position: absolute;
-    font-size: 21px;
-    font-weight: 300;
-    padding: 7px 0 0 8px;
-}
   
 /* ### FIM DO CABEÇALHO ###*/
   
@@ -263,7 +264,8 @@ input[type=text] {
     height: 450px;
     object-fit: cover;
     width: 100%;
-    filter: brightness(70%);
+    filter: brightness(50%);
+    opacity: 1;
 }
 
 .owl-carousel .nav-btn {
@@ -508,7 +510,7 @@ input[type=text] {
 /* ### FIM DO BEM VINDO ###*/
 
 
-/* ### INÍCIO DO GRID INFO ###*/
+/* ### INÍCIO DO GRID MORE INFO ###*/
 
 .grid-more-info {
     display: grid;
@@ -585,9 +587,9 @@ input[type=text] {
     bottom: 0;
 }
 
-/* ### FIM DO GRID INFO ###*/
+/* ### FIM DO GRID MORE INFO ###*/
 
-/* ### INÍCIO DO TESTIMONIALS ###*/
+/* ### INÍCIO DO OUR TEAM ###*/
 
 .team-container {
     position: relative;
@@ -641,7 +643,7 @@ input[type=text] {
     bottom: 0;
 }
 
-/* ### FIM DO TESTIMONIALS ###*/
+/* ### FIM DO OUR TEAM ###*/
 
 
 /* ### INÍCIO DO FOOTER ###*/
@@ -652,6 +654,7 @@ input[type=text] {
 .footer-container .column {
     box-sizing: border-box;
     float: left;
+    text-align: center;
     width: 33.33%;
     padding-right: 20px;
     height: 300px;
@@ -683,20 +686,22 @@ input[type=text] {
 }
 
 .footer-container .column img {
-    margin-top: 20px;
-    width: 100px;
-    height: 100px;
+    margin-top: 35px;
+    width: 70px;
+    height: 70px;
     filter: grayscale(100%);
     opacity: 0.5;
     float: left;
+    margin-left: 20%;
 }
 
 .footer-container .column span {
     color: white;   
     font-size: 21px;
     margin-top: 40px;
-    margin-left: 25px;
+    margin-left: 15px;
     float: left;
+    text-align: left;
     opacity: 0.5;
 }
 
@@ -811,13 +816,12 @@ input[type=text] {
     }
 
     .footer-container .column img {
-        width: 80px;
-        height: 80px;
+        margin-left: 15%;
     }
 
     .footer-container .column span {
         font-size: 16px;
-        margin-left: 20px;
+        margin-top: 45px;
     }
 
     .end .lema {
@@ -857,7 +861,7 @@ input[type=text] {
     }
     
     .menu {
-        transform: translate(100%, -50%);
+        margin-left: 30px;
     }
     
     .topnav-right a {
