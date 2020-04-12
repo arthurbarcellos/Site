@@ -10,13 +10,15 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="css/styles-o-colegio.css">
+    <link rel="stylesheet" type="text/css" href="css/styles-o-colegio.css"> 
 
     <title>Colégio São Plácido</title>
 </head>
 
 <body>
     <div id="overlay" style="display: none;"></div>
+
+    <header></header>
 
     <!-- Top navigation -->
     <div class="topnav" id="topnavbar">
@@ -88,31 +90,39 @@
         </form> 
     </div>
 
-    <!--Main Content-->
     <div class="main-content">
         <div class="header">
-            <h1>GALERIA DE FOTOS</h1>
+            <h1>EVENTOS</h1>
         </div>
         <div class="yellow-bar"></div>
-        <div class="gallery-container">
-            <div class="owl-carousel owl-theme">
-                <div class="item">
-                    <img src="images/galeria/image1.png" alt="image1">
-                </div>
-                <div class="item">
-                    <img src="images/galeria/image2.png" alt="image2">
-                </div>
-                <div class="item">
-                    <img src="images/galeria/image3.png" alt="image3">
-                </div>
-                <div class="item">
-                    <img src="images/galeria/image4.png" alt="image4">
-                </div>
-                <div class="item">
-                    <img src="images/galeria/image5.png" alt="image5">
-                </div>
+
+        <!--Calendário-->
+        <div class="calendar-container">
+            <div class="month">      
+                <ul>
+                    <li class="prev" onclick="prevMonth()">&#10094;</li>
+                    <li class="next" onclick="nextMonth()">&#10095;</li>
+                    <li>
+                        <span id="month"></span>
+                        <br>
+                        <span style="font-size:18px" id="year"></span>
+                    </li>
+                </ul>
             </div>
+    
+            <ul class="weekdays">
+                <li>Dom</li>
+                <li>Seg</li>
+                <li>Ter</li>
+                <li>Qua</li>
+                <li>Qui</li>
+                <li>Sex</li>
+                <li>Sab</li>
+            </ul>
+    
+            <ul class="days" id="days"></ul>    
         </div>
+        
         <div class="yellow-bar"></div>
         <p style="color: #26408d; font-size: 35px; text-align: center; padding: 0; margin-bottom: 0;">
             &#10070;
@@ -170,7 +180,6 @@
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/script.js"></script>
 
-
 <script type="text/javascript">
 
     $(document).ready(function(){
@@ -178,22 +187,12 @@
         $('.owl-carousel').owlCarousel({
             items: 1,
             loop:true,
-            margin: 0,
+            margin:0,
             nav:true,
-            dots: true,
             navText:["<div class='nav-btn prev-slide'>&#8249;</div>","<div class='nav-btn next-slide'>&#8250;</div>"],
             autoplay: true,
             autoplayTimeout: 10000,
             autoplayHoverPause: true,
-            0:{
-                nav:false
-            },
-            760:{
-                nav:true
-            },
-            1024:{
-                nav:true,
-            }
         })
 
     });
