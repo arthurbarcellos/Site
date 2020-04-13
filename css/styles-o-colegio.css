@@ -127,7 +127,7 @@
 .month {
     position: relative;
     box-sizing: border-box;
-    padding: 70px 25px;
+    padding: 30px 25px;
     background: #26408d;
     text-align: center;
     width: 100%;
@@ -200,11 +200,37 @@ ul {
 .days li .active {
     padding: 5px;
     background: #26408d;
-    color: white !important
+    color: white !important;
+}
+
+.days li .event {
+    padding: 5px;
+    border: 4px solid #ffd600;
 }
 
 .days li .dayout {
     color: #ccc;
+}
+
+.dates-container {
+    position: relative;
+    margin-top: 50px;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+.dates-container ul li {
+    margin: 10px;
+    color: #26408d;
+}
+
+.dates-container ul li span {
+    margin-right: 10px;
+    font-weight: 700;
+    padding-left: 5px;
+    border-left: 5px solid #ffd600;
 }
 
 /*##############*/
@@ -229,9 +255,13 @@ ul {
         width: 70%;
     }
 
-    . {
+    .calendar-container {
         width: 70%;
     }
+
+    .dates-container {
+        width: 70%;
+    }    
 
 }
 
@@ -266,6 +296,12 @@ ul {
 
     .calendar-container {
         width: 100%;
+    }
+
+    .dates-container {
+        width: 100%;
+        transform: none;
+        left: -30px;
     }
 
 }
