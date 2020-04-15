@@ -653,19 +653,22 @@ input[type=text] {
 
 /* ### INÍCIO DO FOOTER ###*/
 .footer-container {
-    margin: 0 50px 0 50px;
+    margin: 0;
 }
 
 .footer-container .column {
     box-sizing: border-box;
     float: left;
-    text-align: left;
+    text-align: center;
     width: 33.33%;
-    padding-left: 50px;
-    padding-right: 0;
     height: 270px;
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+.footer-container .column div {
+    position: relative;
+    display: inline-block;
 }
 
 .footer-container .column h4 {
@@ -692,20 +695,21 @@ input[type=text] {
 }
 
 .footer-container .column img {
+    float: left;
     margin-top: 20px;
     width: 70px;
     height: 70px;
     filter: grayscale(100%);
     opacity: 0.5;
-    float: left;
+    
 }
 
 .footer-container .column span {
+    float: left;
     color: white;   
     font-size: 21px;
     margin-top: 25px;
     margin-left: 15px;
-    float: left;
     text-align: left;
     opacity: 0.5;
 }
@@ -825,7 +829,7 @@ input[type=text] {
 
     .footer-container .column span {
         font-size: 16px;
-        margin-top: 45px;
+        margin-top: 30px;
     }
 
     .end .lema {
@@ -1026,6 +1030,7 @@ input[type=text] {
 
     .end .designed {
         position: relative;
+        display: block;
         font-size: 10px;
         float: none;
         right: 0;
