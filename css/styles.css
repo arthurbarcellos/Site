@@ -42,7 +42,7 @@ body {
     font-size: 30px;
     cursor: pointer;
     background-color: transparent;
-    color: gray;
+    color: #8c8c8c;
     position: absolute;
     padding: 0;
     border: none;
@@ -100,7 +100,7 @@ body {
 
 .searchbtn { 
     font-size: 30px;
-    color: gray;
+    color: #8c8c8c;
     background-color: none;
     cursor: pointer;
 }
@@ -265,12 +265,44 @@ input[type=text] {
     margin: 0 50px 18px 50px;
 }
 
-.item img {
+.banner-container .item {
+    position: relative;
+    display: inline-flex;
+    height: 450px;
+    width: 100%;
+}
+
+.item .background {
+    position: relative;
+    box-sizing: border-box;
+    height: 450px;
+    width: 40%;
+}
+
+.item .picture {
+    position: relative;
+    display: flex;
+    height: 450px;
+    width: 60%;
+}
+
+.overlay-image {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay-image-mobile {
+    display: none;
+}
+
+.banner-container .item img {
     height: 450px;
     object-fit: cover;
     width: 100%;
-    filter: brightness(50%);
-    opacity: 1;
+    filter: brightness(50%) grayscale(100%);
+    opacity: 0.5;
 }
 
 .owl-carousel .nav-btn {
@@ -310,65 +342,55 @@ input[type=text] {
     transform: translateX(-50%);
 }
 
-.banner-caption h1 {
+.text-banner {
     position: absolute;
+    width: 60%;
+    box-sizing: border-box;
+    padding-left: 70px;
+    top: 50%;
+    transform: translateY(-65%);
+}
+
+.text-banner a {
     text-decoration: none;
+}
+
+.banner-caption h1 {
+    position: relative;
     cursor: pointer;
     color: white;
-    width: 90%;
-    top: 80px;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
     border: none;
     padding: 0;
-    text-align: center;
+}
+
+.banner-bar {
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 0;
+    width: 100%;
+    border-top: 1px solid #ffd600;
 }
 
 .banner-caption p {
-    position: absolute;
-    text-decoration: none;
+    position: relative;
     cursor: pointer;
     color: white;
-    top: 270px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
+    width: 100%;
     font-size: 18px;
     font-weight: 300;
 }
 
-.divisa {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.flordelis {
-    max-width: 20px;
-    max-height: 20px;
-    padding: 10px;
-    opacity: 0.5;
-}
-
-.left-line, .right-line {
-    position: absolute;
-    border-top: 1px solid white;
-    height: 0;
-    width: 300px;
-    opacity: 0.3;
-}
-
-.left-line {
-    transform: translate(-295px, 20px);
-}
-
-.right-line {
-    transform: translate(35px, -20px);
-}
-
 .banner-caption h5 {
-    display: none;
+    position: absolute;
+    display: block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #ffd600;
+    font-weight: 300;
+    margin-top: 0;
+    padding: 5px;
 }
 
 .down-button {
@@ -377,7 +399,7 @@ input[type=text] {
     border: none;
     font-size: 35px;
     left: 50%;
-    transform: translate(-50%, -32px);
+    transform: translate(-50%, -50px);
     cursor: pointer;
     z-index: 1;
     transition: 0.4s ease-in-out;
@@ -772,8 +794,8 @@ input[type=text] {
         margin-left: 0;
     }
 
-    .banner-caption p {
-        width: 70%;
+    .text-banner {
+        width: 80%;
     }
 
     .grid-container {
@@ -887,41 +909,59 @@ input[type=text] {
         display: none;
     }
 
+    .item .background {
+        width: 0;
+    }
+    
+    .item .picture {
+        width: 100%;
+    }
+
+    .overlay-image {
+        display: none;
+    }
+
+    .overlay-image-mobile {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .text-banner {
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 0;
+        top: auto;
+        transform: none;
+        bottom: 80px;
+        font-size: 12px;
+        text-align: center;
+    }
+
     .banner-caption h1 {
-        width: 60%;
-        border: 5px solid white;
-        padding: 10px;
-        top: 20px;
+        margin: 0;
+        bottom: 40px;
+    }
+
+    .banner-bar {
+        width: 80%;
+        margin: 0;
+        top: 25px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .banner-caption p {
         display: none;
     }
 
-    .divisa {
-        top: 85%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .left-line, .right-line {
-        width: 120px;
-    }
-
-    .left-line {
-        transform: translate(-115px, 20px);   
-    }
-
     .banner-caption h5 {
-        display: block;
         position: absolute;
-        color: white;
-        border: 1px solid white;
-        font-weight: 300;
-        padding: 5px;
-        top: 67%;
+        display: block;
+        bottom: -17px;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translateX(-50%);
     }
 
     .grid-container {
