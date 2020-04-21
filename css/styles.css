@@ -94,7 +94,7 @@ body {
 .topnav-right a {
     position: absolute;
     top: 50%;
-    transform: translate(-300%, -50%);
+    transform: translate(-300%, -52%);
     padding: 0;
 }
 
@@ -263,6 +263,7 @@ input[type=text] {
 .banner-container {
     position: relative;
     margin: 0 50px 18px 50px;
+    height: 480px;
 }
 
 .banner-container .item {
@@ -371,6 +372,7 @@ input[type=text] {
     height: 0;
     width: 100%;
     border-top: 1px solid #ffd600;
+    opacity: 0.7;
 }
 
 .banner-caption p {
@@ -387,7 +389,7 @@ input[type=text] {
     display: block;
     text-decoration: none;
     color: white;
-    border: 1px solid #ffd600;
+    border: 1px solid rgba(255, 214, 0, 0.7);
     font-weight: 300;
     margin-top: 0;
     padding: 5px;
@@ -763,7 +765,6 @@ input[type=text] {
     background-color: white;
     text-align: center;
     padding: 0;
-    
 }
 
 .end .lema {
@@ -871,15 +872,15 @@ input[type=text] {
   @media screen and (max-width: 760px) {
 
     body {
-      margin: 70px 0 0 0;
+      margin: 60px 0 0 0;
     }
 
     #topnavbar {
-        padding: 70px 0px 0 0 !important;
+        padding: 60px 0px 0 0 !important;
     }
     
     #logo {
-        height: 60px !important;
+        height: 50px !important;
     }
 
     #logo-name {
@@ -895,13 +896,13 @@ input[type=text] {
     }
     
     .topnav-right a {
-        transform: translate(-200%, -50%);
+        transform: translate(-200%, -52%);
     }
     
     input[type=text]{
-        top: 70px !important;
+        top: 60px !important;
         position: fixed;
-        padding-left: 25px;
+        padding-left: 30px;
         transition: none;
     }
     

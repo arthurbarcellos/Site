@@ -18,6 +18,8 @@
 <body>
     <div id="overlay" style="display: none;"></div>
 
+    <header></header>
+
     <!-- Top navigation -->
     <div class="topnav" id="topnavbar">
         <div class="container">
@@ -84,26 +86,99 @@
         </form> 
     </div>
 
-    <!--Main Content-->
-    <div class="main-content">
-        <div class="header">
-            <h1>PATRONO</h1>
+    <!--Main content-->
+    <div class="container">
+        <div class="main-content">
+            <div class="header">
+                <h1>Ensino</h1>
+            </div>
+            <div class="yellow-bar"></div>
         </div>
-        <div class="yellow-bar"></div>
-        <img id="patrono" src="images/patrono.png" alt="patrono">
-        <div class="yellow-bar"></div>
-        <div class="text">
+        <!--Tabs-->
+        <div class="tablink-conatiner">
+            <button class="tablink" onclick="openPage('formacao-religiosa', this)" id="defaultOpen">
+                <span class="title">Formação Religiosa</span><span class="icon">&#9767;</span>
+            </button>
+            <button class="tablink" onclick="openPage('formacao-linguistica', this)">
+                <span class="title">Formação Linguística</span><span class="icon">&#9998;</span>
+            </button>
+            <button class="tablink" onclick="openPage('formacao-artistica', this)">
+                <span class="title">Formação Artística</span><span class="icon">&#9834;</span>
+            </button>
+            <button class="tablink" onclick="openPage('educacao-nutricional', this)">
+                <span class="title">Educação Nutricional</span><span class="icon"><i class="fa fa-cutlery" aria-hidden="true"></i></span>
+            </button>
+        </div>
+
+        <div id="formacao-religiosa" class="tabcontent">
+            <div class="symbol">&#9767;</div>
+            <h2>Formação Religiosa</h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Etiam sed dui sem. Suspendisse facilisis, leo in accumsan pellentesque, nisl est dictum libero, id vehicula eros tortor at leo. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed dui sem. 
+                Suspendisse facilisis, leo in accumsan pellentesque, nisl est dictum libero, id vehicula eros tortor at leo. 
                 Nulla id ultricies nisl. Integer sit amet posuere odio. 
                 Morbi mauris urna, cursus et tincidunt et, varius sed tellus. 
                 Vivamus eleifend malesuada varius. Sed nulla purus, pretium vel metus et, scelerisque ultricies dui.
                 <br><br>
+                Vestibulum massa sapien, cursus sed ligula et, molestie aliquam magna. 
+                Maecenas porta quam diam, non bibendum urna auctor in. 
+                Nunc placerat sapien nec lorem commodo, et elementum nibh elementum. 
+                In maximus turpis eu metus interdum dignissim. Fusce fermentum vehicula velit vulputate feugiat. 
+                Fusce tempus viverra mollis. Aenean erat tellus, efficitur sollicitudin sodales at, sollicitudin in dui.
+            </p>
+        </div>
+        <div id="formacao-linguistica" class="tabcontent">
+            <div class="symbol">&#9998;</div>
+            <h2>Formação Linguística</h2>
+            <p>
+                Nunc lacinia eget purus non porttitor. Donec turpis ante, venenatis in suscipit sit amet, volutpat eget ligula. 
+                Praesent lacinia iaculis mauris, eu pretium mi vulputate ut. 
+                Vivamus vitae nisl id leo condimentum commodo eu ornare neque. 
+                In tempus gravida nibh, eget tempus mi consequat et. 
+                Mauris felis quam, dictum ut orci at, tincidunt fringilla dui. 
+                Cras pretium viverra eros, a blandit mauris laoreet vitae. 
+                Nunc imperdiet nulla vitae ligula hendrerit tristique sed in dolor. 
+                <br><br>
+                Sed ex enim, posuere ut accumsan non, rutrum non ligula. 
+                Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse potenti. 
+                Quisque nec felis quis orci ullamcorper tempus non at turpis. 
+                Cras eu orci aliquet, commodo nunc nec, condimentum enim. 
+                Nam erat elit, congue et velit vel, tempus commodo massa.
+            </p> 
+        </div>
+        <div id="formacao-artistica" class="tabcontent">
+            <div class="symbol">&#9834;</div>
+            <h2>Formação Artística</h2>
+            <p>
+                Morbi lacinia, nulla eu semper viverra, urna metus tempor lectus, ut ullamcorper turpis odio id arcu. 
+                Mauris eu dapibus mi, vitae tristique odio. Aliquam in neque mattis diam vestibulum elementum. 
+                Aliquam vitae magna non enim iaculis venenatis. 
+                Donec convallis, turpis a sollicitudin posuere, quam nibh faucibus velit, sed luctus ipsum ante at tortor. 
+                Cras at augue augue. Mauris luctus cursus nibh in varius.
+                <br><br>
+                Donec pellentesque dui eu odio bibendum sagittis. Nulla porta mauris vel libero faucibus faucibus. 
+                Etiam consectetur, velit a commodo elementum, libero risus tempus sem, vitae ultrices sem magna at dolor. 
+                Nunc et dolor in tortor egestas finibus. Donec ac justo sed purus molestie venenatis eu id orci. 
+                Etiam condimentum interdum lacus, vitae sollicitudin felis feugiat sollicitudin. 
+                Ut fringilla consequat erat nec dapibus. Nam lectus tellus, dignissim id massa at, molestie pulvinar tellus. 
+                Fusce et mauris vel tortor egestas iaculis.
+            </p>
+        </div>
+        <div id="educacao-nutricional" class="tabcontent">
+            <div class="symbol"><i class="fa fa-cutlery" aria-hidden="true"></i></div>
+            <h2>Educação Nutricional</h2>
+            <p>
                 Donec vel placerat erat. Donec metus ligula, convallis ut nulla sit amet, rhoncus euismod elit. 
                 Ut nibh ligula, hendrerit eu porttitor ac, eleifend non elit. Donec sed metus magna. 
                 Duis posuere eros nec turpis cursus sollicitudin. 
                 Duis tempus, ante at pellentesque varius, dolor augue ultrices turpis, ut fringilla eros leo non tellus.
+                <br><br>
+                Donec pellentesque dui eu odio bibendum sagittis. Nulla porta mauris vel libero faucibus faucibus. 
+                Etiam consectetur, velit a commodo elementum, libero risus tempus sem, vitae ultrices sem magna at dolor. 
+                Nunc et dolor in tortor egestas finibus. Donec ac justo sed purus molestie venenatis eu id orci. 
+                Etiam condimentum interdum lacus, vitae sollicitudin felis feugiat sollicitudin. 
+                Ut fringilla consequat erat nec dapibus. Nam lectus tellus, dignissim id massa at, molestie pulvinar tellus. 
+                Fusce et mauris vel tortor egestas iaculis.
                 <br><br>
                 Nunc nisl mauris, fermentum in eros ac, convallis aliquet odio. Aliquam porta cursus mauris rutrum dictum. 
                 Mauris nec porttitor risus, eu suscipit libero. Curabitur at sapien posuere, malesuada lorem ut, tincidunt ex. 
@@ -112,10 +187,11 @@
             </p>
         </div>
         <div class="yellow-bar"></div>
-        <p style="color: #26408d; font-size: 35px; text-align: center; padding: 0; margin-bottom: 0;">
+        <p style="color: #26408d; font-size: 35px; text-align: center; padding: 0; margin-bottom: 50px;">
             &#10070;
         </p>
     </div>
+    
 
     <!--Footer-->
     <div class="footer" style="display: grid; background-color: #26408d;">
@@ -171,6 +247,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/script-ensino.js"></script>
 
 
     <script type="text/javascript">
